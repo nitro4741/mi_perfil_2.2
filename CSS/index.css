@@ -1,0 +1,20 @@
+@import  './Modules/variables.css';
+@import './Modules/header.css';
+@import './Modules/layout.css';
+@import './Modules/nav.css';
+@import './Modules/list.css';
+@import './Modules/utils.css';
+@import './Modules/cards.css';
+@import './Modules/buttons.css';
+@import './Modules/hero.css';
+@import './Modules/animation.css';
+
+.body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-family: var(--primary-font-family);
+}
+.main {
+    overflow: hidden;
+}

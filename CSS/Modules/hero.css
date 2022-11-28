@@ -1,0 +1,73 @@
+.hero {
+    background-image: url('/assets/img/fondo_pokemon_1.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.hero__img {
+    position: relative;
+    max-width: 256px;
+}
+
+.hero__primary-img {
+    display: flex;
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+}
+.hero__decorators {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 256px;
+    height: 256px;
+    margin: 0;
+    animation: t-rotate 10s linear infinite;
+}
+
+.hero__decorator {
+    position: absolute;
+}
+
+.hero__decorator:nth-child(1) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.hero__decorator:nth-child(2) {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.hero__decorator:nth-child(3) {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.hero__decorator:nth-child(4) {
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+
+@media (min-width: 768px) {
+    .hero__img {
+        max-width: 320px;
+    }
+    
+    .hero__primary-img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .hero__decorators {
+        width: 320px;
+        height: 320px;
+    }
+}
